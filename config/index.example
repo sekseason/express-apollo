@@ -1,0 +1,9 @@
+const config = {
+  mssql: 'mssql://user:password@mssql-server/db-name',
+  mongodb: 'mongodb://localhost:27017/graphql',
+  getConfig(item = '') {
+    return config[item];
+  }
+}
+
+module.exports = config;
